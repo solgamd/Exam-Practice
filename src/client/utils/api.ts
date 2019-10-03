@@ -1,4 +1,3 @@
-import fetch from 'isomorphic-fetch';
 
 export let AccessToken: string = localStorage.getItem('token') || null;
 export let User: any = {

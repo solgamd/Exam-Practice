@@ -1,5 +1,11 @@
 import * as React from 'react';
 
+export interface IAppProps { }
+
+export interface IAppState {
+    name: string;
+}
+
 class App extends React.Component<IAppProps, IAppState> {
 
     constructor(props: IAppProps) {
@@ -26,12 +32,6 @@ class App extends React.Component<IAppProps, IAppState> {
             </main>
         )
     }
-}
-
-export interface IAppProps { }
-
-export interface IAppState {
-    name: string;
 }
 
 export default App;
