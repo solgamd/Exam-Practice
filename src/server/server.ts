@@ -12,6 +12,7 @@ app.use(passport.initialize());
 app.use(express.static('public'));
 app.use(morgan('dev'));
 app.use(express.json());
+
 app.use(routes);
 
 app.get('*', (req, res) => {

@@ -1,8 +1,8 @@
-import { Router } from 'express';
+import * as express from 'express';
 import * as passport from 'passport';
 import { CreateToken } from '../../utils/security/tokens';
 
-const router = Router();
+const router = express.Router();
 
 
 router.post('/', passport.authenticate('local'), async (req: any, res, next) => {
